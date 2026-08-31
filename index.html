@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Google Classroom, Discord and GitHub links for Data Structures & Applications (1BAI303), Dept. of AI & ML, DSCE.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="DSA — Class Links">
+<meta property="og:description" content="Google Classroom, Discord and GitHub links for Data Structures & Applications (1BAI303), Dept. of AI & ML, DSCE.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌳</text></svg>">
+<style>
+  html { background: #EDEFEA; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<title>Aman's DSA Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+
+<style>
+  :root {
+    --ground:   #EDEFEA;
+    --surface:  #F8F9F5;
+    --ink:      #14201E;
+    --ink-soft: #4C5A56;
+    --ink-faint:#7C8A85;
+    --rule:     #D6DAD1;
+    --accent:   #0E6B5C;
+    --accent-w: #0E6B5C1a;
+    --copper:   #A9501F;
+    --copper-w: #A9501F1a;
+    --indigo:   #4340A8;
+    --indigo-w: #4340A81a;
+    --focus:    #0E6B5C;
+
+    --step--1: 0.78rem;
+    --step-0:  1rem;
+    --step-1:  1.22rem;
+    --step-2:  1.6rem;
+    --step-3:  2.6rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #0F1513;
+      --surface:  #171E1B;
+      --ink:      #E7EBE3;
+      --ink-soft: #A3AFA9;
+      --ink-faint:#7A8781;
+      --rule:     #2A342F;
+      --accent:   #57C9AE;
+      --accent-w: #57C9AE1f;
+      --copper:   #E0975E;
+      --copper-w: #E0975E1f;
+      --indigo:   #9A97F0;
+      --indigo-w: #9A97F01f;
+      --focus:    #57C9AE;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:   #0F1513;
+    --surface:  #171E1B;
+    --ink:      #E7EBE3;
+    --ink-soft: #A3AFA9;
+    --ink-faint:#7A8781;
+    --rule:     #2A342F;
+    --accent:   #57C9AE;
+    --accent-w: #57C9AE1f;
+    --copper:   #E0975E;
+    --copper-w: #E0975E1f;
+    --indigo:   #9A97F0;
+    --indigo-w: #9A97F01f;
+    --focus:    #57C9AE;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    font-size: var(--step-0);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3.5rem 1.25rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead { display: flex; flex-direction: column; gap: 1rem; }
+
+  h1 {
+    font-size: var(--step-3);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 .dim { color: var(--ink-faint); font-weight: 400; }
+
+  .who {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 46ch;
+  }
+  .who strong { color: var(--ink); font-weight: 400; font-style: italic; }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+  }
+  .meta span {
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- what goes where ---------- */
+
+  .key {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 1.1rem 0;
+  }
+  .krow { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+  .kwhat {
+    font-weight: 600;
+    font-size: var(--step-0);
+    min-width: 10.5rem;
+  }
+  .karr { color: var(--accent); font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .kfor {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-0);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 520px) {
+    .kwhat { min-width: 0; }
+  }
+
+  /* ---------- section heading ---------- */
+
+  .band {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    margin-bottom: 1.4rem;
+  }
+  .band h2 {
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0;
+    white-space: nowrap;
+  }
+  .band .fill { flex: 1; height: 1px; background: var(--rule); }
+  .band .count {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    color: var(--ink-faint);
+  }
+
+  /* ---------- the tree ---------- */
+
+  .tree { display: flex; flex-direction: column; gap: 2rem; }
+  .tree.flat { gap: 0.55rem; }
+  .tree.flat > .card { margin-top: 0; }
+
+  .sub {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-0);
+    color: var(--ink-soft);
+    margin: 1.1rem 0 0;
+    max-width: 56ch;
+  }
+
+  .branch { display: flex; flex-direction: column; }
+
+  .labs {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.6rem;
+    border-left: 1px solid var(--rule);
+    margin-left: 1.1rem;
+  }
+  .labs .card { position: relative; }
+  .labs .card::before {
+    content: "";
+    position: absolute;
+    left: -1.6rem;
+    top: 2.1rem;
+    width: 1.1rem;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    padding: 1.05rem 1.15rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    margin-top: 0.55rem;
+  }
+  .branch > .card { margin-top: 0; }
+
+  .card .label { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+
+  .tag {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+  }
+  .tag.theory { color: var(--accent); background: var(--accent-w); }
+  .tag.lab    { color: var(--copper); background: var(--copper-w); }
+  .tag.discord{ color: var(--indigo); background: var(--indigo-w); }
+
+  .card .name {
+    font-size: var(--step-1);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  .actions { display: flex; align-items: center; gap: 0.5rem; }
+
+  .code {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1px dashed var(--rule);
+    border-radius: 6px;
+    padding: 0.42rem 0.6rem;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .code:hover { border-color: var(--accent); color: var(--accent); border-style: solid; }
+  .code.done { border-style: solid; border-color: var(--accent); color: var(--accent); }
+
+  .open {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ground);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 6px;
+    padding: 0.45rem 0.8rem;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .open:hover { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+  .open .tip { transition: transform 0.15s; }
+  .open:hover .tip { transform: translateX(2px); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  /* ---------- elsewhere ---------- */
+
+  .links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+  .chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 0.6rem 0.85rem;
+    background: var(--surface);
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .chip .plat { font-weight: 600; font-size: var(--step--1); }
+  .chip .handle {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    color: var(--ink-faint);
+  }
+
+  /* ---------- footer ---------- */
+
+  .note {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-0);
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 1.25rem;
+    margin: 0;
+    max-width: 56ch;
+  }
+  .note code {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.85em;
+    color: var(--ink);
+  }
+
+  /* ---------- toast ---------- */
+
+  #toast {
+    position: fixed;
+    left: 50%;
+    bottom: 1.75rem;
+    transform: translate(-50%, 1.5rem);
+    background: var(--ink);
+    color: var(--ground);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    padding: 0.55rem 0.95rem;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+
+  @media (max-width: 520px) {
+    .card { grid-template-columns: 1fr; }
+    .actions { justify-content: flex-start; }
+    h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+<nav class="sitenav"><a href="./scan.html">Scan sheet &rarr;</a></nav>
+<style>
+  .sitenav { max-width: 680px; margin: 0 auto; padding: 1.5rem 1.25rem 0; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.78rem; }
+  .sitenav a { color: var(--ink-faint); text-decoration: none; border-bottom: 1px solid transparent; }
+  .sitenav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+</style>
+
+
+<div class="page">
+
+  <header class="masthead">
+    <h1>Data Structures <span class="dim">&amp;</span> Applications</h1>
+
+    <p class="who">Everything for the semester in one place &mdash; taught by <strong>Aman Kumar</strong>, Assistant Professor, Department of AI &amp; Machine Learning, DSCE.</p>
+
+    <div class="meta">
+      <span>1BAI303</span>
+      <span>3rd Semester</span>
+      <span>Sections A &amp; B</span>
+    </div>
+  </header>
+
+  <section class="key">
+    <div class="krow"><span class="kwhat">Google Classroom</span><span class="karr">&rarr;</span><span class="kfor">assignment submission</span></div>
+    <div class="krow"><span class="kwhat">Discord</span><span class="karr">&rarr;</span><span class="kfor">notes, PPTs, general discussion</span></div>
+    <div class="krow"><span class="kwhat">GitHub</span><span class="karr">&rarr;</span><span class="kfor">lab repos</span></div>
+  </section>
+
+  <section>
+    <div class="band">
+      <h2>Google Classroom</h2>
+      <div class="fill"></div>
+      <span class="count">6 classes</span>
+    </div>
+
+    <div class="tree">
+
+      <div class="branch">
+        <div class="card">
+          <div class="label">
+            <span class="tag theory">Theory</span>
+            <span class="name">DSA &mdash; Section A</span>
+          </div>
+          <div class="actions">
+            <button class="code" data-code="cv3auutq">cv3auutq</button>
+            <a class="open" href="https://classroom.google.com/c/ODcwOTY2MzQ3MzYw?cjc=cv3auutq" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="labs">
+          <div class="card">
+            <div class="label">
+              <span class="tag lab">Lab &middot; Batch A1</span>
+              <span class="name">DSA Lab &mdash; A1</span>
+            </div>
+            <div class="actions">
+              <button class="code" data-code="sfc4cozt">sfc4cozt</button>
+              <a class="open" href="https://classroom.google.com/c/ODU1NjI4NTc5NTg5?cjc=sfc4cozt" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="label">
+              <span class="tag lab">Lab &middot; Batch A2</span>
+              <span class="name">DSA Lab &mdash; A2</span>
+            </div>
+            <div class="actions">
+              <button class="code" data-code="a2h23x4q">a2h23x4q</button>
+              <a class="open" href="https://classroom.google.com/c/ODU1NjI5ODQxNTM1?cjc=a2h23x4q" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch">
+        <div class="card">
+          <div class="label">
+            <span class="tag theory">Theory</span>
+            <span class="name">DSA &mdash; Section B</span>
+          </div>
+          <div class="actions">
+            <button class="code" data-code="ffm3qdwt">ffm3qdwt</button>
+            <a class="open" href="https://classroom.google.com/c/ODcwOTY2Nzg3Nzg4?cjc=ffm3qdwt" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="labs">
+          <div class="card">
+            <div class="label">
+              <span class="tag lab">Lab &middot; Batch B1</span>
+              <span class="name">DSA Lab &mdash; B1</span>
+            </div>
+            <div class="actions">
+              <button class="code" data-code="pfgxavoa">pfgxavoa</button>
+              <a class="open" href="https://classroom.google.com/c/ODU1NjI5OTM2Njk3?cjc=pfgxavoa" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="label">
+              <span class="tag lab">Lab &middot; Batch B2</span>
+              <span class="name">DSA Lab &mdash; B2</span>
+            </div>
+            <div class="actions">
+              <button class="code" data-code="iptxlvey">iptxlvey</button>
+              <a class="open" href="https://classroom.google.com/c/Nzk4NDk2MDQ4MjY4?cjc=iptxlvey" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="band">
+      <h2>Discord</h2>
+      <div class="fill"></div>
+      <span class="count">2 servers</span>
+    </div>
+
+    <div class="tree flat">
+      <div class="card">
+        <div class="label">
+          <span class="tag discord">Section A</span>
+          <span class="name">DSA by Aman &mdash; Sec A</span>
+        </div>
+        <div class="actions">
+          <a class="open" href="https://discord.gg/vcsPCu37r" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="label">
+          <span class="tag discord">Section B</span>
+          <span class="name">DSA by Aman &mdash; Sec B</span>
+        </div>
+        <div class="actions">
+          <a class="open" href="https://discord.gg/cV3hWGgPQ" target="_blank" rel="noopener">Join <span class="tip">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="band">
+      <h2>Elsewhere</h2>
+      <div class="fill"></div>
+      <span class="count">optional</span>
+    </div>
+
+    <div class="links">
+      <a class="chip" href="https://github.com/aman-aiml-dsce/" target="_blank" rel="noopener">
+        <span class="plat">GitHub</span>
+        <span class="handle">aman-aiml-dsce</span>
+      </a>
+      <a class="chip" href="https://www.linkedin.com/in/aman-kumar-vishwakarma-1b7707320/" target="_blank" rel="noopener">
+        <span class="plat">LinkedIn</span>
+        <span class="handle">aman-kumar-vishwakarma</span>
+      </a>
+      <a class="chip" href="https://www.instagram.com/amankmrvishwakarma/" target="_blank" rel="noopener">
+        <span class="plat">Instagram</span>
+        <span class="handle">@amankmrvishwakarma</span>
+      </a>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="band">
+      <h2>Reach me</h2>
+      <div class="fill"></div>
+      <span class="count">for real doubts</span>
+    </div>
+
+    <div class="links">
+      <a class="chip" href="mailto:aman-aiml@dayanandasagar.edu">
+        <span class="plat">Email</span>
+        <span class="handle">aman-aiml@dayanandasagar.edu</span>
+      </a>
+      <a class="chip" href="https://wa.me/919174245164" target="_blank" rel="noopener">
+        <span class="plat">WhatsApp</span>
+        <span class="handle">+91 91742 45164</span>
+      </a>
+    </div>
+
+  </section>
+
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  var toast = document.getElementById("toast");
+  var timer = null;
+
+  function flash(msg) {
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(timer);
+    timer = setTimeout(function () { toast.classList.remove("show"); }, 1800);
+  }
+
+  document.querySelectorAll(".code").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var code = btn.getAttribute("data-code");
+      var done = function () {
+        btn.classList.add("done");
+        setTimeout(function () { btn.classList.remove("done"); }, 1200);
+        flash("Copied " + code);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, function () { flash("Copy blocked — select it manually"); });
+      } else {
+        flash("Copy blocked — select it manually");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
